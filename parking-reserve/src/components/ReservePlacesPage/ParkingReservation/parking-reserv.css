@@ -1,0 +1,180 @@
+.payment-page {
+    padding-left: 90px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-page .page-header {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: left;
+    color: #6574FF;
+}
+
+.confirm-info {
+    position: relative;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.confirm-info h1 {
+    color: #6574FF;
+    font: 20px 'SF Display';
+    font-weight: 400;
+    margin: 0;
+}
+
+.confirm-info img {
+    position: absolute;
+}
+
+.confirm-space-info {
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 193px;
+    margin-top: 80px;
+}
+
+.confirm-space-street {
+    position: absolute;
+    width: 300px;
+    color: #333333;
+    font: 24px 'SF Display';
+    font-weight: 400;
+    margin-left: 350px;
+}
+
+.confirm-space-city {
+    position: absolute;
+    color: #939393;
+    width: 300px;
+    font: 16px 'SF Display';
+    font-weight: 400;
+    margin-top: 45px;
+    margin-left: 350px;
+}
+
+.confirm-space-total {
+    position: absolute;
+    float: right;
+    color: #333333;
+    font: 24px 'SF Display';
+    font-weight: 400;
+    right: 0;
+}
+
+.confirm-space-cost {
+    position: absolute;
+    color: #6574FF;
+    font: 24px 'SF Display';
+    font-weight: 800;
+    margin-top: 163px;
+    right: 0;
+}
+
+.confirm-space-quantity {
+    position: absolute;
+    color: #333333;
+    font: 20px 'SF Display';
+    font-weight: 400;
+    margin-top: 147px;
+    margin-left: 350px;
+}
+
+.confirm-space-quantity input[type=number] {
+    width: 80px;
+    height: 40px;
+    border: 2px solid #6574FF;
+    color: #6574FF;
+    font: 20px 'SF Display';
+    font-weight: 400;
+    margin-left: 40px;
+    border-radius: 0px 5px 5px 0px;
+    padding-left: 10px;
+}
+
+.border {
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 323px;
+    background-color: #E2E5FF;
+}
+
+.notification {
+    position: relative;
+    margin-top: 373px;
+}
+
+.notification-text {
+    float: right;
+    width: 96%;
+    color: #9E9E9E;
+    font: 18px 'SF Display';
+}
+
+.custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 28px;
+    height: 28px;
+}
+
+.color-text {
+    color: #6574FF;
+    text-decoration: none;
+    margin: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #6574FF;
+    border-radius: 2px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: #6574FF;
+    background-color: #6574FF;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.confirm-info button {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6574FF;
+    margin-top: 100px;
+    color: #ffffff;
+    font: 18px 'SF Display';
+    font-weight: 400;
+}

@@ -1,0 +1,13 @@
+{
+    "connectionString": "mongodb://localhost/parking-reserve-back",
+    "secret": "E@FRS!BOP",
+    "emailFrom": "trent.corwin90@ethereal.email",
+    "smtpOptions": {
+        "host": "smtp.ethereal.email",
+        "port": 587,
+        "auth": {
+            "user": "trent.corwin90@ethereal.email",
+            "pass": "h5rMtvAHmXcNwvNhvm"
+        }
+    }
+}

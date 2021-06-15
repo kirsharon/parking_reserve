@@ -1,0 +1,202 @@
+/* @import 'antd/dist/antd.css'; */
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('./resourse/fonts/SFUIText-LightItalic.eot');
+    src: local('./resourse/fonts/SF UI Text LightItalic'), local('./resourse/fonts/SFUIText-LightItalic'), url('./resourse/fonts/SFUIText-LightItalic.eot?#iefix') format('embedded-opentype'), url('./resourse/fonts/SFUIText-LightItalic.woff2') format('woff2'), url('./resourse/fonts/SFUIText-LightItalic.woff') format('woff'), url('./resourse/fonts/SFUIText-LightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('./resourse/fonts/SFUIDisplay-Regular.eot');
+    src: local('./resourse/fonts/SF UI Display Regular'), local('./resourse/fonts/SFUIDisplay-Regular'), url('./resourse/fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('./resourse/fonts/SFUIDisplay-Regular.woff2') format('woff2'), url('./resourse/fonts/SFUIDisplay-Regular.woff') format('woff'), url('./resourse/fonts/SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('./resourse/fonts/SFUIText-RegularItalic.eot');
+    src: local('./resourse/fonts/SF UI Text Regular Italic'), local('./resourse/fonts/SFUIText-RegularItalic'), url('./resourse/fonts/SFUIText-RegularItalic.eot?#iefix') format('embedded-opentype'), url('./resourse/fonts/SFUIText-RegularItalic.woff2') format('woff2'), url('./resourse/fonts/SFUIText-RegularItalic.woff') format('woff'), url('./resourse/fonts/SFUIText-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* background: linear-gradient(to top, #7404A9, #6574FF); */
+    max-width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100%;
+    /* max-width: 40rem; */
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 90%;
+    line-height: 1.35;
+    color: black;
+    background-color: #f8f6f4;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    /* flex: 1 0 auto; */
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-color: white;
+}
+
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( 180deg, #6574FF 0%, rgba(116, 4, 169, 0.97) 100%), #6574FF;
+}
+
+.app {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #fff;
+}
+
+.navbar {
+    width: 100%;
+    height: 7.5%;
+    background-color: #6574FF;
+}
+
+.navbar-avatar {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.nav-item {
+    /* по-умолчанию для <button>, но пригодится для <a> */
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    /* создаём маленькие отступы, если кнопки перенесутся на две строки */
+    /* margin: 2px 0; */
+    /* невидимая граница (понадобится для цвета при наведении/фокусе) */
+    border-bottom: solid 3px transparent;
+    /* размер строится из текста и отступов (без width/height) */
+    /* padding: 0.5em 1em; */
+    /* убедитесь, что достаточно контраста! */
+    color: #ffffff;
+    /* background-color: #9555af; */
+}
+
+.nav-item-active {
+    /* по-умолчанию для <button>, но пригодится для <a> */
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    /* создаём маленькие отступы, если кнопки перенесутся на две строки */
+    /* margin: 2px 0; */
+    /* невидимая граница (понадобится для цвета при наведении/фокусе) */
+    border-bottom: solid 3px transparent;
+    /* размер строится из текста и отступов (без width/height) */
+    /* padding: 0.5em 1em; */
+    color: rgb(180, 163, 245);
+    border-color: #E9EBFF;
+    padding-bottom: 17.5px;
+    /* background-color: #9555af; */
+}
+
+.nav-item:active {
+    color: rgb(180, 163, 245);
+    border-color: #ffffff;
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: rgb(180, 163, 245);
+    border-color: #ffffff;
+    padding-bottom: 17.5px;
+}
+
+.nav-to {
+    color: #FFFFFF;
+    border: 1px solid rgb(49, 45, 45);
+    /* width: 260px;
+    height: 50px;
+    left: 510px;
+    top: 707px; */
+    margin-left: 30%;
+    margin-top: 2%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-to:hover,
+.nav-to:focus {
+    color: rgb(180, 163, 245);
+    border-color: #c9c5c5;
+}
+
+hr {
+    width: 80%;
+    border-top: 1px #E2E5FF;
+}
+
+
+/* олдскульный эффект «нажатия» + цветовые правки */
+
+
+/* .nav-item:active {
+    color: #9555af;
+    border-color: currentColor;
+    background-color: white;
+    transform: translateY(1px);
+    filter: saturate(150%);
+} */
+
+.user-data {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+}
+
+.edit-btn {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin: 1em;
+}

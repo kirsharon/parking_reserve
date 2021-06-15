@@ -1,0 +1,87 @@
+.space-info {
+    position: relative;
+    width: 90%;
+    height: 30%;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+    box-shadow: 0.1em 0.1em 4px rgba(122, 122, 122, 0.5);
+}
+
+.space-photo {
+    position: relative;
+    width: 100%;
+    height: 45%;
+    left: 20px;
+    right: 0;
+    top: 20px;
+    margin: auto;
+}
+
+.space-photo img {
+    position: relative;
+    height: 100%;
+}
+
+.space-name {
+    position: absolute;
+    top: 245px;
+    left: 35px;
+    width: 320px;
+    color: #333333;
+    font: 24px 'SF Display';
+    margin: 0;
+}
+
+.space-cost {
+    position: absolute;
+    right: 35px;
+    top: 245px;
+    width: 120px;
+    color: #6574FF;
+    font: 24px 'SF Display';
+    margin: auto;
+}
+
+.space-name-info {
+    position: relative;
+    top: 95px;
+    left: 35px;
+    color: #939393;
+    font: 16px 'SF Display';
+}
+
+.space-info button {
+    position: relative;
+    float: left;
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6574FF;
+    margin-top: 140px;
+    margin-left: 35px;
+    color: #ffffff;
+    font: 18px 'SF Display';
+    font-weight: 400;
+}
+
+.space-rentor {
+    position: relative;
+    float: right;
+    width: 262px;
+    margin-right: 35px;
+    margin-top: 152px;
+}
+
+.call-rentor {
+    position: absolute;
+    float: right;
+    font: 18px 'SF Display';
+    color: #6574FF;
+    width: 225px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
